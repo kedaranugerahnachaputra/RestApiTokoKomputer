@@ -3,6 +3,7 @@ const models = require("../models/index")
 const customer = models.customer
 const app = express()
 app.use(express.json())
+app.use(express.urlencoded({extended: true}))
 
 const multer = require("multer")
 const path = require("path")
